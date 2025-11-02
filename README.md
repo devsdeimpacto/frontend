@@ -10,6 +10,7 @@
 - [Solução Proposta](#-solução-proposta)
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 - [Como Rodar o Projeto](#-como-rodar-o-projeto)
+- [Equipe](#-equipe)
 
 
 ## 💡 Sobre o Projeto
@@ -54,3 +55,11 @@ O **+Coleta** oferece um chatbot e um painel:
 
 3. O App está rodando em:
     http://localhost:3000
+
+## 👩‍💻 Equipe
+
+| Nome | Função | Email |
+|------|---------|-----------|
+| Lucas Messias | Frontend Developer | lucasmessias98@hotmail.com |
+| Vinicius Brunoni | Backend Developer | viniciusbrunoni@me.com|
+| Paulo Jaluwyj | UX/UI Designer | pgm.jaluwyj@gmail.com |
