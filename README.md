@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/assets/images/logo.png" alt="Logo do Projeto" width="200"/>
+  <img src="public/assets/images/logo.png" alt="Logo do Projeto" width="400"/>
 </p>
 
 <h1 align="center">♻️ +Coleta</h1>
