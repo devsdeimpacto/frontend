@@ -63,3 +63,8 @@ O **+Coleta** oferece um chatbot e um painel:
 | Lucas Messias | Frontend Developer | lucasmessias98@hotmail.com |
 | Vinicius Brunoni | Backend Developer | viniciusbrunoni@me.com|
 | Paulo Jaluwyj | UX/UI Designer | pgm.jaluwyj@gmail.com |
+
+
+## 📄 Licença
+
+Este projeto é licenciado sob os termos da **MIT License** — veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
