@@ -1,0 +1,102 @@
+{
+	"settings": {
+		"react" : {
+			"version" : "detect"
+		}
+	},
+    "env": {
+        "browser": true,
+		"es2020": true,
+		"node" : true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+		"plugin:jest/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2021,
+        "sourceType": "module"
+    },
+    "parser": "@babel/eslint-parser",
+    "plugins": [
+        "react",
+		"jest"
+    ],
+    "ignorePatterns": [
+        "*.mdx",
+        "*.ttf"
+    ],
+    "rules": {
+		"no-useless-escape" :"off",
+		"react/display-name" : "off",
+        "react/jsx-indent" : "error",
+		"react/prop-types" : [
+			"error", { 
+				"ignore": [
+					"children"
+				] 
+			}
+		],
+        "react/jsx-curly-spacing": [
+            "error", 
+            {
+                "children": { "when": "always" },
+                "allowMultiline" : true
+            }
+        ],
+		"space-before-function-paren": [
+			"error", 
+			"always"
+		],
+		"keyword-spacing" : [
+			"error", 
+			{
+				"before" : true,
+				"after" : true
+			}
+		],
+ 		"eol-last": [
+			"error", 
+			"never"
+		],
+        "indent": [
+            "error",
+            4
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+		"no-multi-spaces" : "error",
+		"no-multiple-empty-lines" : [
+			"error",
+			{ 
+				"max": 1
+			}
+		],
+        "arrow-spacing" : "error",
+        "block-spacing" : "error",
+        "comma-spacing" : "error",
+        "array-bracket-spacing" : [
+            "error", 
+            "always"
+        ],
+        "object-curly-spacing" : [
+            "error", "always"
+        ],
+        "prefer-const" : "error",
+ 		"jest/no-disabled-tests": "warn",
+		"jest/no-focused-tests": "error",
+		"jest/no-identical-title": "error",
+		"jest/prefer-to-have-length": "warn",
+		"jest/valid-expect": "error"
+    }
+}

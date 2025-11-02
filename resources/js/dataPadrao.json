@@ -1,0 +1,416 @@
+[
+  {
+    "tipo": "texto",
+    "label": "Nome do Prestador",
+    "value": "nome_prestador",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "pf",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Sobrenome do Prestador",
+    "value": "sobrenome_prestador",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "pf",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "cpf",
+    "label": "CPF do Prestador",
+    "value": "cpf_prestador",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "pf",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "rg",
+    "label": "RG do Prestador",
+    "value": "rg_prestador",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "pf",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Nacionalidade do Prestador",
+    "value": "nacionalidade_prestador",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "pf",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Estado Civil do Prestador",
+    "value": "estado_civil_prestador",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "pf",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Profissão do Prestador",
+    "value": "profissao_prestador",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "pf",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Razão Social do Prestador",
+    "value": "razao_social_prestador",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "pj",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Nome Fantasia do Prestador",
+    "value": "nome_fantasia_prestador",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "pj",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "cnpj",
+    "label": "CNPJ do Prestador",
+    "value": "cnpj_prestador",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "pj",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Endereço do Prestador",
+    "value": "endereco_prestador",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "todos",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "telefone",
+    "label": "Telefone do Prestador",
+    "value": "telefone_prestador",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "todos",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Email do Prestador",
+    "value": "email_prestador",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "todos",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Representante Legal do Prestador",
+    "value": "representante_legal_prestador",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "pj",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "cpf",
+    "label": "CPF do Representante Legal do Prestador",
+    "value": "cpf_representante_legal_prestador",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "pj",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "rg",
+    "label": "RG do Representante Legal do Prestador",
+    "value": "rg_representante_legal_prestador",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "pj",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Logo do Prestador",
+    "value": "logo_prestador",
+    "disabled": true,
+    "obrigatorio": "nao",
+    "tipo_cliente": "todos",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Nome do Cliente",
+    "value": "nome_cliente",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "pf",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Sobrenome do Cliente",
+    "value": "sobrenome_cliente",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "pf",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "cpf",
+    "label": "CPF do Cliente",
+    "value": "cpf_cliente",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "pf",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "rg",
+    "label": "RG do Cliente",
+    "value": "rg_cliente",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "pf",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Nacionalidade do Cliente",
+    "value": "nacionalidade_cliente",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "pf",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Estado Civil do Cliente",
+    "value": "estado_civil_cliente",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "pf",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Profissão do Cliente",
+    "value": "profissao_cliente",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "pf",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Razão Social do Cliente",
+    "value": "razao_social_cliente",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "pj",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Nome Fantasia do Cliente",
+    "value": "nome_fantasia_cliente",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "pj",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "cnpj",
+    "label": "CNPJ do Cliente",
+    "value": "cnpj_cliente",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "pj",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "telefone",
+    "label": "Telefone do Cliente",
+    "value": "telefone_cliente",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "todos",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Email do Cliente",
+    "value": "email_cliente",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "todos",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Representante Legal do Cliente",
+    "value": "representante_legal_cliente",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "pj",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "cpf",
+    "label": "CPF do Representante Legal do Cliente",
+    "value": "cpf_representante_legal_cliente",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "pj",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "rg",
+    "label": "RG do Representante Legal do Cliente",
+    "value": "rg_representante_legal_cliente",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "pj",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Endereço do Cliente",
+    "value": "endereco_cliente",
+    "disabled": true,
+    "obrigatorio": "sim",
+    "tipo_cliente": "todos",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Data de Vigência",
+    "value": "data_vigencia ",
+    "disabled": false,
+    "obrigatorio": "sim",
+    "tipo_cliente": "todos",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Prazo de Duração",
+    "value": "prazo_duracao",
+    "disabled": false,
+    "obrigatorio": "sim",
+    "tipo_cliente": "todos",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Período de Duração",
+    "value": "prazo_extenso ",
+    "disabled": false,
+    "obrigatorio": "sim",
+    "tipo_cliente": "todos",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Data Extensa de Início do Serviço",
+    "value": "data_inicio_servico ",
+    "disabled": false,
+    "obrigatorio": "sim",
+    "tipo_cliente": "todos",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Valor",
+    "value": "valor",
+    "disabled": false,
+    "obrigatorio": "sim",
+    "tipo_cliente": "todos",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Condições de Pagamento",
+    "value": "condicao_pagamento ",
+    "disabled": false,
+    "obrigatorio": "sim",
+    "tipo_cliente": "todos",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Multa",
+    "value": "multa",
+    "disabled": false,
+    "obrigatorio": "sim",
+    "tipo_cliente": "todos",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Juros",
+    "value": "juros",
+    "disabled": false,
+    "obrigatorio": "sim",
+    "tipo_cliente": "todos",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Período de Inadimplencia",
+    "value": "periodo_inadimplencia",
+    "disabled": false,
+    "obrigatorio": "sim",
+    "tipo_cliente": "todos",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Partes ou Divisão",
+    "value": "partes_divisao",
+    "disabled": false,
+    "obrigatorio": "sim",
+    "tipo_cliente": "todos",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Cidade",
+    "value": "cidade",
+    "disabled": false,
+    "obrigatorio": "sim",
+    "tipo_cliente": "todos",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "UF",
+    "value": "uf",
+    "disabled": false,
+    "obrigatorio": "sim",
+    "tipo_cliente": "todos",
+    "texto_ajuda": ""
+  },
+  {
+    "tipo": "texto",
+    "label": "Data por Extenso",
+    "value": "data_longa",
+    "disabled": false,
+    "obrigatorio": "sim",
+    "tipo_cliente": "todos",
+    "texto_ajuda": ""
+  }
+]
