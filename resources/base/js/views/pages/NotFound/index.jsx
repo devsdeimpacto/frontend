@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Box, Typography, Link } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-import Logo from '@/../images/logo-primary.svg';
+import Logo from '@/../images/logo.png';
  
 // Styles
 import useStyle from './style';

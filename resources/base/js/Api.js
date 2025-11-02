@@ -1,7 +1,7 @@
 const env = (process.env.REACT_APP_ENV === 'local' || process.env.REACT_APP_ENV === 'development') 
-    ? 'https://reqres.in/'
+    ? 'https://backend-production-43d8c.up.railway.app/'
     : (process.env.REACT_APP_ENV === 'staging') 
-        ? 'https://reqres.in/' : 'https://reqres.in/';
+        ? 'https://backend-production-43d8c.up.railway.app/' : 'https://backend-production-43d8c.up.railway.app/';
 
 const base_url = `${env}`;        
 /**
@@ -11,11 +11,9 @@ export default {
 
     //
     base_url: `${base_url}`,
-    accountLogin : `${base_url}/auth/token`,
-    accountRecover : `${base_url}/Account/Recover`,
 
     metrics: `${base_url}/metrics/`,
 
-    users: `${base_url}/users/`,
-    clientes: `${base_url}/clientes/`
+    catadores: `${base_url}/catadores/`,
+    ordens: `${base_url}/solicitacoes/`
 };

@@ -11,7 +11,7 @@ import Loader from '@/views/partials/Loader';
 import Page from '@/views/partials/Page';
 
 // Images
-import Logo from '@/../images/logo-primary.svg';
+import Logo from '@/../images/logo.png';
 
 // Styles
 import useStyle from './style';
@@ -33,8 +33,8 @@ const Login = ({ children }) => {
                             <Box height="100vh" display="flex" flexDirection="column" justifyContent="center">
                                 <Grid container spacing={theme.spacing()} display="flex" direction="row" justifyContent="center">
                                     <Grid item sm={6} xs={12} display='flex'>
-                                        <Box display="flex" justifyContent="center">
-                                            <img src={Logo} width="500" alt="Deu Ruim Aqui" />
+                                        <Box display="flex" justifyContent="center" alignItems='center'>
+                                            <img src={Logo} height='100'alt="Deu Ruim Aqui" />
                                         </Box>
                                     </Grid>
                                     <Grid item sm={6} xs={12} style={{ display : 'flex', alignItems : 'center' }}>

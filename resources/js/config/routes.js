@@ -30,6 +30,56 @@ export default () => {
             isPrivate   : true,
             component   : lazy(() => import(/* webpackChunkName: 'example' */'~/views/pages/Dashboard')),
             routes      : []
+        },
+        {
+            as          : AuthRoute,
+            name        : 'mapa',
+            label       : 'Mapa',
+            path        : '/mapa',
+            exact       : true,
+            isPrivate   : true,
+            component   : lazy(() => import(/* webpackChunkName: 'example' */'~/views/pages/Mapa')),
+            routes      : []
+        },
+        {
+            as          : AuthRoute,
+            name        : 'ordens',
+            label       : 'Ordens de Coletas',
+            path        : '/ordens',
+            exact       : true,
+            isPrivate   : true,
+            component   : lazy(() => import(/* webpackChunkName: 'example' */'~/views/pages/OrdensColetas')),
+            routes      : [
+                {
+                    as          : AuthRoute,
+                    name        : 'ordemDetails',
+                    label       : 'Detalhes da Ordem de Serviço',
+                    path        : '/:ordemId/details',
+                    exact       : true,
+                    isPrivate   : true,
+                    component   : lazy(() => import(/* webpackChunkName: 'vehicle-details' */'~/views/pages/OrdensColetas/Details')),
+                },
+            ]
+        },
+        {
+            as          : AuthRoute,
+            name        : 'rotas',
+            label       : 'Rotas',
+            path        : '/rotas',
+            exact       : true,
+            isPrivate   : true,
+            component   : lazy(() => import(/* webpackChunkName: 'example' */'~/views/pages/Rotas')),
+            routes      : []
+        },
+        {
+            as          : AuthRoute,
+            name        : 'catadores',
+            label       : 'Catadores',
+            path        : '/catadores',
+            exact       : true,
+            isPrivate   : true,
+            component   : lazy(() => import(/* webpackChunkName: 'example' */'~/views/pages/Catadores')),
+            routes      : []
         }
     ]);
     

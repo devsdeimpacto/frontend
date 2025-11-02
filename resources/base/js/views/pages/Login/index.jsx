@@ -9,11 +9,7 @@ import { LoadingButton } from '@mui/lab';
 import { Input } from '@/views/components/Form';
 
 // Hooks
-import useFetch from '@/hooks/useFetch';
 import usePage from '@/hooks/usePage';
-
-// Api
-import api from '@/Api';
 
 // Utils
 import { setJwt } from '@/utils/auth';
@@ -37,9 +33,6 @@ const Login = () => {
     const methods = useForm();
     const { handleSubmit, formState : { isSubmitting } } = methods;
 
-    const [ accountLogin ] = useFetch(api.accountLogin);
-    const [ userRequest ] = useFetch(api.users);
-
     const { push } = useHistory();
 
     const [ errors, setErrors ] = useState(null);
@@ -49,50 +42,17 @@ const Login = () => {
 
         setErrors(null);
 
-        const dataLogin = new URLSearchParams({ 
-            username: data.email,
-            password: data.password,
-        });
+        const fakeAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMn0.KMUFsIDTnFmyG3nMiGM6H9FNFUROf3wh7SmqJp-QV30';
+        const fakeUser = { id: 1, name: 'Recicla Paraná Gestão Ambiental Ltda', email: data.email };
 
-        const response = await accountLogin(null, {
-            method : 'POST',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-                'Accept': 'application/json'
-            },
-            body : dataLogin
-        });
-        
-        if (response.status !== 200) {
+        setJwt(fakeAccessToken);
+        setCookie('access_token', fakeAccessToken);
+        localStorage.setItem('user', JSON.stringify(fakeUser));
+        setCookie('user', fakeUser);
 
-            const { message } = await response.json();
-            setErrors(message);
-
-            return false;
-        }
-
-        const { access_token } = await response.json();
-
-        setJwt(access_token);
-
-        setCookie('access_token', access_token);
-        //setCookie('refresh_token', refresh_token);
-
-        const userResponse = await userRequest('me', {
-            headers: {
-                'Authorization': `Bearer ${access_token}`
-            }
-        });
-
-        if (userResponse.status === 200) {
-            const data = await userResponse.json();
-            setCookie('user', data);
-            localStorage.setItem('user', JSON.stringify(data));
-        }
-
+        // Redireciona para página inicial
         push('/');
-
-        setErrors('Acessos do usuário e senha não foram encontrados.');
+    
     };
 
     return (

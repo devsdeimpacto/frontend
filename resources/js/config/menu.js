@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRoute } from 'react-router-mapping';
 
-import { BarChartOutlined, FeedOutlined, MapOutlined } from '@mui/icons-material';
+import { AltRouteOutlined, BarChartOutlined, FeedOutlined, MapOutlined, PeopleOutline } from '@mui/icons-material';
 
 const useMenu = () => {
 
@@ -25,8 +25,20 @@ const useMenu = () => {
                 },
                 {
                     icon    : <FeedOutlined/>,
-                    label   : 'Ocorrências',
-                    href    : route('ocorrencias'),
+                    label   : 'Ordens de Coletas',
+                    href    : route('ordens'),
+                    live    : true
+                },
+                {
+                    icon    : <AltRouteOutlined/>,
+                    label   : 'Rotas',
+                    href    : route('rotas'),
+                    live    : true
+                },
+                {
+                    icon    : <PeopleOutline/>,
+                    label   : 'Catadores',
+                    href    : route('catadores'),
                     live    : true
                 },
             ]

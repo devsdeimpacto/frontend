@@ -6,7 +6,7 @@ import { alpha } from '@mui/material/styles';
 import PropTypes from 'prop-types';
 
 // Images
-import Logo from '@/../images/logo-primary.svg';
+import Logo from '@/../images/logo.png';
 
 // Hooks
 import useCollapseDrawer from '@/hooks/useCollapseDrawer';
@@ -49,7 +49,7 @@ const Aside = ({ menu, isOpenSidebar, onCloseSidebar }) => {
             >
                 <Stack direction="row" display='flex' alignItems="center" justifyContent="center">
                     <Link href="/" underline="none">
-                        <img src={Logo} alt="Deu Ruim Aqui" />
+                        <img src={Logo} width='150' alt="Deu Ruim Aqui" />
                     </Link>  
                 </Stack>
             </Stack>

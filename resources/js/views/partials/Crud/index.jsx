@@ -17,7 +17,7 @@ const CrudProvider = ({ children, ...rest }) => {
         },
         filter : {},
         pagination  : {
-            page            : 1,
+            skip            : 1,
             pageSize        : 10,
             sortKey         : 'created_at',
             sortDirection   : 'desc'

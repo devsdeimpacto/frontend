@@ -14,15 +14,15 @@ const GREY = {
 };
   
 const PRIMARY = {
-    light: '#94a5cb',
-    main: '#00357A',
-    dark: '#002464',
+    light: 'rgb(182 229 82)',
+    main: 'rgb(128 156 20)',
+    dark: 'rgb(96 124 60)',
     contrastText: '#fff',
 };
   
 const SECONDARY = {
     light: '#b0efe9',
-    main: '#00CEBB',
+    main: '#3382e9ff',
     dark: '#00b39d',
     contrastText: '#fff',
 };

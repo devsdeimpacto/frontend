@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import { Box, Stack, AppBar, Toolbar, IconButton, Divider, ClickAwayListener, 
-    Paper, List, ListItemText, MenuItem, useTheme, ListItemIcon, Typography
+    Paper, List, ListItemText, MenuItem, useTheme, ListItemIcon
 } from '@mui/material';
-import { AccountCircleOutlined, CreditCardOutlined, LogoutOutlined, MenuOutlined, MoreVert } from '@mui/icons-material';
+import { AccountCircleOutlined, LogoutOutlined, MenuOutlined, MoreVert } from '@mui/icons-material';
 
 // Hooks
 import usePopper from '@/hooks/usePopper';
@@ -15,8 +15,6 @@ import useStyles from './style';
 import { deleteJwt } from '@/utils/auth';
 import MHidden from '@/views/components/MHidden';
 import useCollapseDrawer from '@/hooks/useCollapseDrawer';
-import { useRoute } from 'react-router-mapping';
-import { useHistory } from 'react-router-dom';
 
 const COLLAPSE_WIDTH = 102;
 
@@ -35,8 +33,6 @@ export default function HeaderBar ({ children, chat, onOpenSidebar, help, profil
     const { isCollapse } = useCollapseDrawer();
     const [ Popper, toggle ] = usePopper();
     const user = JSON.parse(localStorage.getItem('user'));
-    const { route } = useRoute();
-    const { push } = useHistory();
 
     const avatarRef = useRef(null);
 
@@ -48,10 +44,6 @@ export default function HeaderBar ({ children, chat, onOpenSidebar, help, profil
         deleteJwt();
 
         window.location.href = '/';
-    };
-
-    const onTransacoes = () => {
-        push(route('transacoes'));
     };
 
     useEffect(() => {
@@ -110,7 +102,7 @@ export default function HeaderBar ({ children, chat, onOpenSidebar, help, profil
                         }}>
                             <AccountCircleOutlined color="secondary" fontSize="large" />
                             <Box ml={2}>
-                                <ListItemText primary={`${user?.nome} ${user?.sobrenome}`} sx={{
+                                <ListItemText primary={`${user?.name}`} sx={{
                                     width: '120px',
                                     whiteSpace: 'nowrap',
                                     '&.MuiListItemText-root > span': {
@@ -118,17 +110,6 @@ export default function HeaderBar ({ children, chat, onOpenSidebar, help, profil
                                         textOverflow: 'ellipsis'
                                     }
                                 }} />
-                                <Box 
-                                    backgroundColor={user?.plano_nome === 'Avulso' ? theme.palette.primary.main : theme.palette.secondary.main} 
-                                    maxWidth='60px' 
-                                    borderRadius={8}
-                                    display='flex'
-                                    justifyContent='center'
-                                >
-                                    <Typography variant='caption' color='white' textAlign='center'>
-                                        { user?.plano_nome }
-                                    </Typography>
-                                </Box>
                             </Box>
                             <IconButton variant="contained" ref={avatarRef} onClick={toggle}>
                                 <MoreVert color='secondary' />
@@ -147,7 +128,7 @@ export default function HeaderBar ({ children, chat, onOpenSidebar, help, profil
                                                         <Box sx={{ my: 1.5, px: 2.5 }}>
                                                             <ListItemText 
                                                                 color='primary' 
-                                                                primary={`${user?.nome} ${user?.sobrenome}`} 
+                                                                primary={`${user?.name}`} 
                                                             />
                                                         </Box>
                                                     </>
@@ -173,17 +154,6 @@ export default function HeaderBar ({ children, chat, onOpenSidebar, help, profil
                                                     </ListItemIcon>
                                                     <ListItemText disableTypography primary='Perfil'/>
                                                 </MenuItem> */ }
-                                                <MenuItem onClick={onTransacoes} sx={{ 
-                                                    borderRadius: 1,
-                                                    paddingLeft: '10px'
-                                                }}>
-                                                    <ListItemIcon sx={{ 
-                                                        '&.MuiListItemIcon-root': { minWidth: '25px' }
-                                                    }}>
-                                                        <CreditCardOutlined fontSize='small'/>
-                                                    </ListItemIcon>
-                                                    <ListItemText disableTypography primary='Transações'/>
-                                                </MenuItem>
                                                 <MenuItem onClick={onLogout} sx={{ 
                                                     borderRadius: 1,
                                                     paddingLeft: '10px'
