@@ -1,79 +1,56 @@
-## Introdução
+<p align="center">
+  <img src="public/assets/images/logo.png" alt="Logo do Projeto" width="200"/>
+</p>
 
-Essa é a aplicação front-end padrão de desenvolvimento, englobando todos os módulos existentes dentro do mesma.
+<h1 align="center">♻️ +Coleta</h1>
 
-## O APP
+## 📚 Sumário
+- [Sobre o Projeto](#-sobre-o-projeto)
+- [Problema](#-problema)
+- [Solução Proposta](#-solução-proposta)
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Como Rodar o Projeto](#-como-rodar-o-projeto)
 
-### Pré-requisitos
 
-A **stack** utilizada, foi montada utilizando um agrupamento de tecnolgias para melhor flexibilização e personalização do sistema. Abaixo uma lista breve com as tecnologias utilizadas:
+## 💡 Sobre o Projeto
 
- - **Npm**
- - **Webpack**
- - **WebPack Dev Server**
- - **Babel**
- - **React**
- - **Sass**
- - **Material UI**
- - **StoryBook**
- - **ESLint**
- - **JSDoc**
- - **Husky**
+O **+Coleta** é uma plataforma que conecta pessoas que desejam descartar seus lixos de forma correta com ecopontos
 
-### Executando a aplicação front-end
 
-A seguir descrevo passo-a-passo os seguintes comandos para iniciar a aplicação em modo de desenvolvimento. Partindo da raiz do projeto execute os seguintes comandos:
+## ⚙️ Problema
 
-### Instalação, desenvolvimento e compilação
+Atualmente, as prefeituras enfrentam dificuldades para monitorar
+a quantidade e o tipo de lixo coletado em diferentes regiões.
+Isso gera:
+- Falta de dados para otimizar rotas de coleta;
+- Desperdício de recursos públicos;
+- Dificuldade de medir impacto ambiental;
+- Pouco engajamento da população.
 
-Na pasta raiz do projeto executo o seguinte comando em seu terminal:
 
-```bash
-npm install
-```
+## 🚀 Solução Proposta
 
-Após a execução da instalação das dependências, ainda na pasta raiz do projeto execute o seguinte comando para executar a aplicação em modo de desenvolvimento. A aplicação iniciará utilizando a porta `3000`.
+O **+Coleta** oferece um chatbot e um painel:
+- 📱 Chat através do WhatsApp que analisa a imagem e indetifica o tipo do lixo
+- 📊 Visualização de métricas por bairro e tipo de lixo;
+- 🗺️ Mapa com visualização das Ordens de Serviços;
+- 🧠 Análise inteligente dos dados para apoiar decisões públicas;
+- 🌍 Rotas otimizadas para os coletores.
 
-```bash
-npm run start 
-```
 
-Após a finalização do desenvolvimento, é possível gerar um pacote para ser enviado para o ambiente de homologação ou produção. Para compilar esse pacote, utilize o comando abaixo:
+## 🛠️ Tecnologias Utilizadas
 
-```bash
-npm run build:prod
-```
+- **Frontend:** React + Material UI + ApexCharts   
+- **Hospedagem:** Railway  
 
-## Storybook
 
-Antes de iniciar a utilização do storybook, é necessário realizar uma instação global do mesmo. Abaixo segue o comando em npm para a instalção:
+## 🧪 Como Rodar o Projeto
 
-```bash
-npx sb init
-```
+1. Clone o repositório:
+   git clone https://github.com/devsdeimpacto/frontend.git
 
-para mais informações sobre o storybook, basta acessar esse [link](https://storybook.js.org/). Se a instalção ocorreu normalmente, basta utilizar o comando existente no npm scripts:
+2. Instale as dependências:
+    npm install
 
-```bash
-npm run storybook
-```
-
-## JsDocs
-
-O projeto possui um pequena área aonde é possível gerar uma documentação visual de todos os métodos utilizados que não sejam no modelo `JSX`. Para realizar a visualização desse documento, basta utilizar a seguinte linha de comando em seu terminal:
-
-```bash
-npm run docs
-```
-
-Após o documento ser gerado com sucesso, uma nova pasta chamada `.docs` será adicionada a raiz do projeto e dentro da mesma, alguns arquivos `.html` serão criados com uma aplicalção visual interna para navegação dos métodos que o projeto contém.
-
-## Webpack Bundle Analyzer
-
-O projeto também possui um analisador de `bundles` e `chunks`. Essa função permite verificar quais arquivos tem mais peso dentro da aplicação e o que cada um contém. Para realizar o uso dessa funcionalidade utilize a seguinte linha de comando em seu terminal:
-
-```bash
-npm run analyzer
-```
-
-Você poderá navegar por cada arquivo em uma aplicação totalmente visual e verificar se algo está errado.
+3. O App está rodando em:
+    http://localhost:3000
